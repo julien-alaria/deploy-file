@@ -8,5 +8,10 @@
  * Exemple .env.production :
  *   VITE_UPLOAD_BASE=https://mondomaine.com/uploads
  */
+//POUR UPLOAD LOCAL
+// export const UPLOAD_BASE =
+//   import.meta.env.VITE_UPLOAD_BASE || "http://localhost:3000/uploads";
+
+//POUR UPLOAD ONLINE
 export const UPLOAD_BASE =
-  import.meta.env.VITE_UPLOAD_BASE || "https://nonephemeral-marge-empties.ngrok-free.dev/uploads";
+  import.meta.env.VITE_UPLOAD_BASE || " https://nonephemeral-marge-empties.ngrok-free.dev/uploads";
