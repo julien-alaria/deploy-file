@@ -41,11 +41,6 @@ export function FestivalConfigProvider({ children }) {
       .finally(() => setLoading(false));
   }, []);
 
-  /**
-   * Update a top-level section's config fields.
-   * @param {string} sectionKey - e.g. "hero", "general"
-   * @param {object} data - partial object to merge into that section
-   */
   const updateConfig = (sectionKey, data) => {
     setConfig((prev) => {
       const next = { ...prev, [sectionKey]: { ...prev[sectionKey], ...data } };

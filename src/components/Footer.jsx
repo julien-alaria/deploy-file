@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import React from "react";
 import Social from "../components/Social";
 import Newsletter from "./Newsletter";
 

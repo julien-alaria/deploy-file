@@ -39,7 +39,6 @@ const registerSchema = z.object({
  * Composant Register (Page d'enregistrement)
  * Formulaire complet d'enregistrement pour les nouveaux utilisateurs
  * Après enregistrement réussi, auto-login automatique
- * @returns {JSX.Element} La page d'enregistrement
  */
 export function Register() {
   const { t } = useTranslation();
