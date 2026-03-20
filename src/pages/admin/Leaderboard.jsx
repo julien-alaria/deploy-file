@@ -19,7 +19,7 @@ function Leaderboard() {
   const [message, setMessage] = useState("");
   const [showVotesModal, setShowVotesModal] = useState(false);
   const [movieToView, setMovieToView] = useState(null);
-  const uploadBase = "http://localhost:3000/uploads";
+  const uploadBase = import.meta.env.VITE_UPLOAD_BASE || " https://nonephemeral-marge-empties.ngrok-free.dev/uploads";;
 
   // Fetch all movies
   const { data } = useQuery({
