@@ -7,7 +7,6 @@ import * as z from "zod";
 import { useTranslation } from "react-i18next";
 import Navbar from "../../components/Navbar.jsx";
 
-
 /**
  * Schéma de validation pour le formulaire de connexion
  * Valide: email et password

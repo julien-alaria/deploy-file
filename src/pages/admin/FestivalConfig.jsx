@@ -5,7 +5,7 @@ import SectionCard from "../../components/admin/config/SectionCard";
 import ConfigInput from "../../components/admin/config/ConfigInput";
 import ColorPicker from "../../components/admin/config/ColorPicker";
 
-// ─── Icon helpers ──────────────────────────────────────────────────────────────
+// Icon helpers 
 const Icon = ({ d, size = 18 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
     <path d={d} />
@@ -26,7 +26,7 @@ const ICONS = {
   sponsors:    "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
 };
 
-// ─── Tiny toggle for navbar links ─────────────────────────────────────────────
+// Tiny toggle for navbar links 
 function NavbarToggle({ label, value, onChange }) {
   return (
     <div className="flex items-center justify-between py-2 border-b border-white/5 last:border-0">
@@ -44,7 +44,7 @@ function NavbarToggle({ label, value, onChange }) {
   );
 }
 
-// ─── Save toast ───────────────────────────────────────────────────────────────
+// Save toast
 function Toast({ msg }) {
   if (!msg) return null;
   return (
@@ -54,7 +54,7 @@ function Toast({ msg }) {
   );
 }
 
-// ─── Sponsors Manager (embedded in FestivalConfig) ────────────────────────────
+// Sponsors Manager (embedded in FestivalConfig) 
 const CATEGORIES = [
   { value: "officiels",   label: "Officiels"   },
   { value: "medias",      label: "Médias"       },
@@ -335,7 +335,7 @@ function SponsorsManager() {
   );
 }
 
-// ─── Main component ───────────────────────────────────────────────────────────
+// Main component 
 export default function FestivalConfig() {
   const { config, loading, updateConfig, resetConfig, exportConfig, importConfig } =
     useFestivalConfig();
@@ -360,7 +360,7 @@ export default function FestivalConfig() {
   const update = (key) => (field) => (val) => updateConfig(key, { [field]: val });
   const toggle = (key) => () => updateConfig(key, { visible: !section(key).visible });
 
-  // ── Import handler
+  // Import handler
   const handleImport = (e) => {
     const file = e.target.files?.[0];
     if (!file) return;

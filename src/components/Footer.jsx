@@ -13,7 +13,7 @@ const { t } = useTranslation();
         {/* Colonne gauche : identité + réseaux */}
         <div>
           <h2 className="text-4xl font-semibold mb-4">MARS <span className="text-[#AD46FF]">
-AI</span></h2>
+          AI</span></h2>
           <p className="text-gray-300 mb-6 leading-relaxed">
             {t("footer.description")}
 
